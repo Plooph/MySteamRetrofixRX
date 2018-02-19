@@ -2,6 +2,7 @@ package net.azarquiel.mysteamretrofixrx.model
 
 /**
  * Created by PabloHdezA on 19/02/2018.
+ *
  */
 
 data class Games(val applist:Apps)
