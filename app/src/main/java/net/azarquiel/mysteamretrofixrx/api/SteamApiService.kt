@@ -1,5 +1,6 @@
-package net.azarquiel.mysteamretrofixrx.model
+package net.azarquiel.mysteamretrofixrx.api
 
+import net.azarquiel.mysteamretrofixrx.model.Games
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory

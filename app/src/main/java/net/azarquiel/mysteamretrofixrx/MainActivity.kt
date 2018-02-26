@@ -6,16 +6,21 @@ import android.util.Log
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import net.azarquiel.mysteamretrofixrx.model.Games
-import net.azarquiel.mysteamretrofixrx.model.SteamApiService
+import net.azarquiel.mysteamretrofixrx.api.SteamApiService
+import net.azarquiel.mysteamretrofixrx.api.SteamStoreService
 import rx.android.schedulers.AndroidSchedulers
 import rx.schedulers.Schedulers
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var games: Games
+
     // lazy => singleton de nuestra api
     private val steamApiService by lazy {
         SteamApiService.create()
+    }
+    private val steamStoreService by lazy {
+        SteamStoreService.create()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
